@@ -9,8 +9,8 @@ fi
 SOLVER="SOLVER.tsk"
 
 # Compile source code into executable (solver)
-#SRCS=$(ls *.cpp 2> /dev/null)
-#g++ -o "$SOLVER" $SRCS
+SRCS=$(ls *.cpp 2> /dev/null)
+g++ -o "$SOLVER" $SRCS
 
 # Directories with games and solutions
 TEST_DIR="tests"
