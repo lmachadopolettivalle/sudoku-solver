@@ -48,4 +48,8 @@ done
 
 echo "Success rate: $successes / $total"
 
-exit 0
+if [ "$successes" -eq "$total" ]; then
+	exit 0
+else
+	exit 1
+fi
